@@ -1,0 +1,234 @@
+]0;~/Documents/DATA/R/test_github[?1034hJunfengdeMacBook-Pro:test_github junfengwang$ [KJunfengdeMacBook-Pro:test_github junfengwang$ ls
+README.md		database.R		helloworld.R		test			test_github.Rproj
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add heloo[K[K[Klloworld.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit helloworld.R 
+hint: Waiting for your editor to close the file... [?2004h[K[master 111fb6f] helloworld
+ 1 file changed, 1 insertion(+)
+ create mode 100644 helloworld.R
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 14, done.
+Counting objects:   7% (1/14)   Counting objects:  14% (2/14)   Counting objects:  21% (3/14)   Counting objects:  28% (4/14)   Counting objects:  35% (5/14)   Counting objects:  42% (6/14)   Counting objects:  50% (7/14)   Counting objects:  57% (8/14)   Counting objects:  64% (9/14)   Counting objects:  71% (10/14)   Counting objects:  78% (11/14)   Counting objects:  85% (12/14)   Counting objects:  92% (13/14)   Counting objects: 100% (14/14)   Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects:  10% (1/10)   Compressing objects:  20% (2/10)   Compressing objects:  30% (3/10)   Compressing objects:  40% (4/10)   Compressing objects:  50% (5/10)   Compressing objects:  60% (6/10)   Compressing objects:  70% (7/10)   Compressing objects:  80% (8/10)   Compressing objects:  90% (9/10)   Compressing objects: 100% (10/10)   Compressing objects: 100% (10/10), done.
+Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 1.84 KiB | 134.00 KiB/s, done.
+Total 13 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)   [Kremote: Resolving deltas:  66% (2/3)   [Kremote: Resolving deltas: 100% (3/3)   [Kremote: Resolving deltas: 100% (3/3), done.[K
+To https://github.com/15210280436/test_github.git
+   733dbf3..111fb6f  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pushcommit helloworld.R [3Padd[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add helloworld.R push[Kcommit helloworld.R 
+hint: Waiting for your editor to close the file... [?2004h[K[master 03e6055] 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit helloworld.R [3Padd[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpush[K
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   111fb6f..03e6055  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ [KJunfengdeMacBook-Pro:test_github junfengwang$ git pull
+Already up to date.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull helloworld.R
+fatal: 'helloworld.R' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull helloworld.R[K
+Already up to date.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull upstream master
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git checkout master
+D	helloworld.R
+D	test.R
+D	test/123.R
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git checkout master[5@pull upstream[C[C[C[C[C[C[C[1P master[1P master[1P master[1P master[1P master[1P master[1P master[1P mastero masterr masteri masterg masteri mastern master
+From https://github.com/15210280436/test_github
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull origin master[1P master[1P master[1P master[1P master[1P master[1P masterd mastera mastert mastera master[1P master[1P master[1P master[1P masterh mastere masterl masterl mastero masterw mastero masterr masterl masterd master[C master= master[1P master. master[1P master[1Pmaster. masterR master[C master[1Pmaster
+fatal: 'helloworld.R' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull
+Already up to date.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull origin/master
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull origin/master[K[K[K[K[K[K[K[K[K[K[K[K[Khelloworld.R
+fatal: 'helloworld.R' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    helloworld.R[m
+	[31mdeleted:    test.R[m
+	[31mdeleted:    test/123.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+	[31mtest/.Rproj.user/[m
+	[31mtest_github.Rproj[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git checkout
+D	helloworld.R
+D	test.R
+D	test/123.R
+Your branch is up to date with 'origin/master'.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git rm hellowrold>[K.R
+fatal: pathspec 'hellowrold.R' did not match any files
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git rm hellowrold.R[1Pold.R[1Pold.Rwold.R[Crld.R
+rm 'helloworld.R'
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git stu[Katus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mdeleted:    helloworld.R[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    test.R[m
+	[31mdeleted:    test/123.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+	[31mtest/.Rproj.user/[m
+	[31mtest_github.Rproj[m
+
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ ;git[K[K[K[Kgit pull
+Already up to date.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull origin master
+From https://github.com/15210280436/test_github
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git branch --set-upstream-to=origin/<branch> master
+bash: branch: No such file or directory
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mdeleted:    helloworld.R[m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    test.R[m
+	[31mdeleted:    test/123.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+	[31mtest/.Rproj.user/[m
+	[31mtest_github.Rproj[m
+
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git rm test.R
+rm 'test.R'
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git test/123.R[C test/123.Rr test/123.Rm test/123.R[C test/123.R
+rm 'test/123.R'
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git stu[Katus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mdeleted:    helloworld.R[m
+	[32mdeleted:    test.R[m
+	[32mdeleted:    test/123.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+	[31mtest/[m
+	[31mtest_github.Rproj[m
+
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ ;[Kgit add *
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add[K[K[K[Kc[K commit *
+hint: Waiting for your editor to close the file... [?2004h[K[master 5b572d8] all
+ 8 files changed, 51 insertions(+), 1 deletion(-)
+ create mode 100644 test/.Rproj.user/FFA5ED4A/pcs/files-pane.pper
+ create mode 100644 test/.Rproj.user/FFA5ED4A/pcs/source-pane.pper
+ create mode 100644 test/.Rproj.user/FFA5ED4A/pcs/windowlayoutstate.pper
+ create mode 100644 test/.Rproj.user/FFA5ED4A/pcs/workbench-pane.pper
+ create mode 100644 test/.Rproj.user/FFA5ED4A/rmd-outputs
+ create mode 100644 test/.Rproj.user/FFA5ED4A/saved_source_markers
+ delete mode 100644 test/123.R
+ create mode 100644 test_github.Rproj
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 15, done.
+Counting objects:   6% (1/15)   Counting objects:  13% (2/15)   Counting objects:  20% (3/15)   Counting objects:  26% (4/15)   Counting objects:  33% (5/15)   Counting objects:  40% (6/15)   Counting objects:  46% (7/15)   Counting objects:  53% (8/15)   Counting objects:  60% (9/15)   Counting objects:  66% (10/15)   Counting objects:  73% (11/15)   Counting objects:  80% (12/15)   Counting objects:  86% (13/15)   Counting objects:  93% (14/15)   Counting objects: 100% (15/15)   Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects:  12% (1/8)   Compressing objects:  25% (2/8)   Compressing objects:  37% (3/8)   Compressing objects:  50% (4/8)   Compressing objects:  62% (5/8)   Compressing objects:  75% (6/8)   Compressing objects:  87% (7/8)   Compressing objects: 100% (8/8)   Compressing objects: 100% (8/8), done.
+Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  46% (6/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 1.14 KiB | 146.00 KiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   03e6055..5b572d8  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git staut[K[Ktus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mdeleted:    helloworld.R[m
+	[32mdeleted:    test.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rproj.user/[m
+
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull
+Already up to date.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add .Rproj.user/[K
