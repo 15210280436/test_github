@@ -1,6 +1,6 @@
 library(tidyverse)
 library(nycflights13)
-
+library(ggplot2)
 library(DBI)
 con <- DBI::dbConnect(RPostgreSQL::PostgreSQL(),
                       host   = "127.0.0.1",
@@ -11,6 +11,10 @@ con <- DBI::dbConnect(RPostgreSQL::PostgreSQL(),
 
 student <- tbl(con,"o_student")
 
+student_1 <- head(student,n=100) %>% 
+  collect()
+
+student_1
 
 dbDisconnect(con)
 
@@ -72,4 +76,47 @@ flights %>%
   group_by(year,month,day) %>% 
   summarise(delay=mean(dep_delay,na.rm = TRUE)) #na.rm 去掉空值
 
+student_1 %>% 
+  filter(grade<8) %>% 
+  ggplot(mapping=aes(x=grade,color=grade))+
+  geom_bar()
 
+# geom_point and geom_smooth 配合使用，可以看到散点以及趋势
+
+student_1 %>% 
+  filter(grade<8) %>% 
+  ggplot(mapping=aes(x=grade,y=province_id))+
+  geom_boxplot()
+
+seq(1,10)
+
+by_dest <- flights %>% 
+  group_by(dest)
+delay <- by_dest %>% 
+  summarise(count=n(),dist=mean(distance,na.rm=TRUE),delay=mean(arr_delay,na.rm=TRUE))
+delay <- filter(delay,count>20,dest!="HNL")
+
+delay %>% 
+  filter(dist<750) %>% 
+  ggplot(mapping = aes(x=dist,y=delay))+
+  geom_point(aes(size=count),alpha=1/3)+
+  geom_smooth(se=FALSE)
+
+flights %>% 
+  group_by(tailnum) %>% 
+  summarise(delay=mean(arr_delay,na.rm=TRUE),n=n()) %>% 
+  ggplot(mapping=aes(x=n,y=delay))+
+  geom_point(alpha=1/10)
+
+diamonds %>% 
+  filter(carat<3) %>% 
+  ggplot(mapping = aes(x=carat,color=cut))+
+  geom_freqpoly(binwidth=0.1)
+
+diamonds %>% #直方图+密度图
+  filter(carat<3) %>% 
+  ggplot(mapping = aes(x=carat,y=..density..))+
+  geom_histogram(binwidth=0.1)+
+  geom_density(alpha=.7)
+
+  
