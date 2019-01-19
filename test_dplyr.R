@@ -119,4 +119,77 @@ diamonds %>% #直方图+密度图
   geom_histogram(binwidth=0.1)+
   geom_density(alpha=.7)
 
+flights %>% 
+  select(origin,tailnum,dep_time) %>% 
+  group_by(origin,tailnum) %>% 
+  arrange(desc(dep_time)) 
+
+flights %>% 
+  group_by(year,month,day) %>% 
+  summarise(delay=mean(dep_delay,na.rm = TRUE)) #na.rm 去掉空值
+
+diamonds1 <- diamonds %>% 
+  mutate(y_1=ifelse(y<3 | y>20,NA,y))
+
+diamonds1 %>% 
+  ggplot(mapping = aes(x=x,y=y_1))+
+  geom_point()
+
+#看一下取消航班和未取消航班延误时间的样本量
+flights %>% 
+  mutate(
+    cancelled=is.na(dep_time),# is.na =true表示dep_time为空的取消航班标签。
+    sched_hour=sched_dep_time %/% 100,
+    sched_min=sched_dep_time %% 100,
+    sched_dep_time=sched_hour+sched_min/60
+  ) %>% 
+  group_by(cancelled) %>% 
+  summarise(n=n())
+
+#通过图形查看取消航班和未取消航班延误时间的差异，未取消航班远远多于取消航班数量，不能说明两者存在差异
+flights %>% 
+  mutate(
+    cancelled=is.na(dep_time),
+    sched_hour=sched_dep_time %/% 100,
+    sched_min=sched_dep_time %% 100,
+    sched_dep_time=sched_hour+sched_min/60
+  ) %>% 
+  ggplot(mapping = aes(x=sched_dep_time,color=cancelled))+
+  geom_freqpoly(binwidth=1/4)
+
+#通过密度来看两个样本延误时间差异
+flights %>% 
+  mutate(
+    cancelled=is.na(dep_time),
+    sched_hour=sched_dep_time %/% 100,
+    sched_min=sched_dep_time %% 100,
+    sched_dep_time=sched_hour+sched_min/60
+  ) %>% 
+  ggplot(mapping = aes(x=sched_dep_time,y=..density..,color=cancelled))+
+  geom_freqpoly(binwidth=1/4)+
+  geom_density(alpha=.7)
+
+flights %>% 
+  mutate(
+    cancelled=is.na(dep_time),
+    sched_hour=sched_dep_time %/% 100,
+    sched_min=sched_dep_time %% 100,
+    sched_dep_time=sched_hour+sched_min/60
+  ) %>% 
+  ggplot(mapping = aes(x=origin,y=sched_dep_time))+
+  geom_boxplot()
+
+diamonds %>%
+  count(color, cut) %>% #相当于groupby+summarise
+  ggplot(mapping = aes(x=color,y=cut,fill=n))+
+  geom_tile()#两个变量组合观测数量
+
+diamonds %>%
+  ggplot(mapping = aes(x = x, y = y)) +
+  geom_point() +
+  coord_cartesian(xlim = c(4, 11), ylim = c(4, 11)) # 首先画散点图后发现x集中在4-11，集中在4-11，所以用coord_cartesian函数来限定一下，显得图形更直观
+
+faithful %>% 
+  ggplot(mapping = aes(x=eruptions,y=waiting))+
+  geom_point()
   
