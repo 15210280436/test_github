@@ -2,6 +2,10 @@ library(tidyverse)
 library(nycflights13)
 library(ggplot2)
 library(DBI)
+library(modelr)
+library(charlatan)
+library(stringr)  
+
 con <- DBI::dbConnect(RPostgreSQL::PostgreSQL(),
                       host   = "127.0.0.1",
                       dbname = "octopus_susuan",
@@ -188,8 +192,96 @@ diamonds %>%
   ggplot(mapping = aes(x = x, y = y)) +
   geom_point() +
   coord_cartesian(xlim = c(4, 11), ylim = c(4, 11)) # 首先画散点图后发现x集中在4-11，集中在4-11，所以用coord_cartesian函数来限定一下，显得图形更直观
+ggsave("diamonds.pdf") #保存到PDF，write_csv(diamonds, "diamonds.csv") 保存到csv
 
 faithful %>% 
   ggplot(mapping = aes(x=eruptions,y=waiting))+
   geom_point()
+
+readxl::read_xls("trial_class.xls", col_names = FALSE) # col_names = FALSE不要将第一行作为列 标题
+
+x1 <- "El Ni\xf1o was particularly bad this year"
+x2 <- "\x82\xb1\x82\xf1\x82\xc9\x82\xbf\x82\xcd"
+parse_character(x1, locale = locale(encoding = "Latin1"))
+parse_character(x2, locale = locale(encoding = "Shift-JIS")) #处理字符编码
+
+planes %>% 
+  count(tailnum) %>% 
+  filter(n>1)
+
+#Generate dummy dataset
+# set seed
+set.seed(1212) #由于是随机data，所以需要seed来记录
+# fake data
+df <- data_frame(
+  name = ch_name(30),#ch_name(30) 随机创建30个假名字
+  country = rep(c("US", "UK", "CN"), 10) %>% sample(), #rep函数，限制随机重复次数
+  job = sample(ch_job(3), 30, replace = TRUE), #ch_job(3) 创建3个假job，sample随机打乱
+  spending = rnorm(30, mean = 100, sd = 20), #随机一组平均值为100，标准差为20的30个数据
+  item = sample(1:3, 30, replace = TRUE) #sample 随机1-3 出现30次
+)
+
+glimpse(df) #横向查看数据
+
+# common tools
+df %>% 
+  filter(country=="US") %>% 
+  mutate(per_item_spending=spending/item) %>% 
+  group_by(job) %>% 
+  summarise(total_spending=sum(spending),
+            max_item = max(item),
+            per_item_mu = mean(per_item_spending)
+            ) %>% 
+  arrange(total_spending)
+
+# use select drop column
+df %>% 
+  #select(-country,-job)
+  #select(-c(country, job))
+  select(item, spending, name)
+
+df %>% rename(person = name, 
+              amount = spending, 
+              quantity = item)
+
+df %>% select(contains("ing")) # 选择包含ing列
+
+df %>% 
+  select(one_of("name", "item")) 
+
+# use function from other package
+df %>% 
+  # from stringr package
+  mutate(first_name = str_extract(name, "^\\w*"),
+         last_name = str_extract(name, "\\w*$")) %>% 
+  select(contains("name"))
+
+# using if-else
+df %>% 
+  mutate(one_item = ifelse(item == 1, "Yes", "No")) %>% # ifelse 加入判断
+  select(contains("item"))
+
+# using case-when
+df %>% 
+  mutate(
+    spending_cat = case_when(
+      spending > 100 ~ "above 100",
+      spending > 50 ~ "above 50",
+      TRUE ~ "below 50"
+    )
+  ) %>% 
+  select(contains("spending"))
   
+# filter multiple conditions
+df %>% 
+  filter(country == "CN", item != 1, spending >= 100) #多条件筛选
+
+# find spending mean
+df %>% 
+  summarise(spending_mean = mean(spending),spending_sd=sd(spending))
+
+# combine group by with filter or mutate
+df %>% 
+  group_by(job) %>% 
+  filter(spending < mean(spending)) %>% 
+  mutate(cumsum_spending = cumsum(spending)) 
