@@ -1,11 +1,9 @@
 ---
-title: "Markdown_test 大家好"
-CJKmainfont: Noto Sans CJK SC
+title: "Markdown_test 大家好？"
 output:
   pdf_document:
     includes:
-      header-includes:
-        - \usepackage{xeCJK}
+      in_header: header.tex
     keep_tex: yes
     latex_engine: xelatex
 ---
