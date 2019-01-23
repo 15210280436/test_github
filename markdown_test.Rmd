@@ -1,0 +1,42 @@
+---
+title: "Markdown_test 大家好"
+CJKmainfont: Noto Sans CJK SC
+output:
+  pdf_document:
+    includes:
+      header-includes:
+        - \usepackage{xeCJK}
+    keep_tex: yes
+    latex_engine: xelatex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.showtext = TRUE)
+library(showtext)
+library(tidyverse)
+library(nycflights13)
+library(ggplot2)
+library(DBI)
+library(modelr)
+library(charlatan)
+library(stringr) 
+```
+
+## Including Freqpoly 大家好
+```{r echo=FALSE}
+diamonds %>% 
+  filter(carat<3) %>% 
+  ggplot(mapping = aes(x=carat,color=cut))+
+  geom_freqpoly(binwidth=0.6)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
