@@ -36,3 +36,35 @@ temp <- trail_class_leads %>%
   summarise(n=n()) %>% 
   ungroup() %>% 
   spread(ss,n)
+
+leads <- readxl::read_xlsx("leads.xlsx")
+
+leads <- leads %>% 
+  rename(
+  
+  month=月
+)
+
+leads_0 <- leads %>% 
+  group_by(month,city_level) %>% 
+  summarise(n=n()) %>% 
+  ungroup() %>% 
+  spread(city_level,n) 
+
+leads_1 <- leads %>% 
+  group_by(month) %>% 
+  summarise(n=n())
+
+leads_2 <- inner_join(leads_0,leads_1)
+leads_2 <- leads_2 %>% 
+  rename(
+    a1=`1`,
+    a2=`2`,
+    a3=`3`,
+    a4=`4`,
+    a5=`5`
+    
+    
+  )
+leads_2 %>% 
+  mutate(a1_rate=leads_2$a1/n,a2_rate=leads_2$a2/n,a3_rate=leads_2$a3/n,a4_rate=leads_2$a4/n,a5_rate=leads_2$a5/n)
