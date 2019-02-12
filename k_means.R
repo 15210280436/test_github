@@ -4,7 +4,7 @@ library(janitor) # for clean name
 library(cluster) # for cluster algos
 library(gridExtra) # for putting multiple plots together
 library(factoextra) # extra help on clustering visualization
-library(DT) # for interactive table
+library(DT) # for interactive
 
 # set plot theme
 old <- theme_set(theme_tufte() + theme(text = element_text(family = "Menlo")))
