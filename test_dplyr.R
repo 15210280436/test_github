@@ -273,8 +273,8 @@ df %>%
   select(contains("spending"))
   
 # filter multiple conditions
-df %>% 
-  filter(country == "CN", item != 1, spending >= 100) #多条件筛选
+df %>%
+  filter(country == "CN", item != 1, spending >= 100) #多条件筛选 
 
 # find spending mean
 df %>% 
@@ -285,3 +285,6 @@ df %>%
   group_by(job) %>% 
   filter(spending < mean(spending)) %>% 
   mutate(cumsum_spending = cumsum(spending)) 
+
+k <- 2:10
+km <- map(k)
