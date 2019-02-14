@@ -2,7 +2,6 @@ library(tidyverse)
 library(ggthemes)
 library(ggplot2)
 
-leads <- readxl::read_xlsx("red.xlsx")
+leads <- readr::read_csv("trial_class.csv")
 
 leads
-

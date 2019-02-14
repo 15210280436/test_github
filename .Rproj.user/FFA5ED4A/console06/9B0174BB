@@ -232,3 +232,676 @@ Everything up-to-date
 ]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pull
 Already up to date.
 ]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add .Rproj.user/[K
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master 72c85e5] user
+ 10 files changed, 307 insertions(+), 74 deletions(-)
+ create mode 100644 .Rproj.user/FFA5ED4A/console06/9B0174BB
+ create mode 100644 .Rproj.user/FFA5ED4A/console06/9B0174BB.env
+ create mode 100644 .Rproj.user/FFA5ED4A/console06/INDEX001
+ create mode 100644 .Rproj.user/FFA5ED4A/sources/prop/A8D4DA12
+ create mode 100644 .Rproj.user/FFA5ED4A/sources/prop/INDEX
+ rename helloworld.R => .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents (100%)
+ create mode 100644 .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ delete mode 100644 test.R
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ g[Ktig [K[K[K[Kgit push
+Enumerating objects: 18, done.
+Counting objects:   5% (1/18)   Counting objects:  11% (2/18)   Counting objects:  16% (3/18)   Counting objects:  22% (4/18)   Counting objects:  27% (5/18)   Counting objects:  33% (6/18)   Counting objects:  38% (7/18)   Counting objects:  44% (8/18)   Counting objects:  50% (9/18)   Counting objects:  55% (10/18)   Counting objects:  61% (11/18)   Counting objects:  66% (12/18)   Counting objects:  72% (13/18)   Counting objects:  77% (14/18)   Counting objects:  83% (15/18)   Counting objects:  88% (16/18)   Counting objects:  94% (17/18)   Counting objects: 100% (18/18)   Counting objects: 100% (18/18), done.
+Delta compression using up to 4 threads
+Compressing objects:   6% (1/15)   Compressing objects:  13% (2/15)   Compressing objects:  20% (3/15)   Compressing objects:  26% (4/15)   Compressing objects:  33% (5/15)   Compressing objects:  40% (6/15)   Compressing objects:  46% (7/15)   Compressing objects:  53% (8/15)   Compressing objects:  60% (9/15)   Compressing objects:  66% (10/15)   Compressing objects:  73% (11/15)   Compressing objects:  80% (12/15)   Compressing objects:  86% (13/15)   Compressing objects:  93% (14/15)   Compressing objects: 100% (15/15)   Compressing objects: 100% (15/15), done.
+Writing objects:   5% (1/17)   Writing objects:  11% (2/17)   Writing objects:  17% (3/17)   Writing objects:  23% (4/17)   Writing objects:  29% (5/17)   Writing objects:  35% (6/17)   Writing objects:  41% (7/17)   Writing objects:  47% (8/17)   Writing objects:  52% (9/17)   Writing objects:  58% (10/17)   Writing objects:  64% (11/17)   Writing objects:  70% (12/17)   Writing objects:  76% (13/17)   Writing objects:  82% (14/17)   Writing objects:  88% (15/17)   Writing objects:  94% (16/17)   Writing objects: 100% (17/17)   Writing objects: 100% (17/17), 4.74 KiB | 808.00 KiB/s, done.
+Total 17 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   5b572d8..72c85e5  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ su[K[Kgit sa[Ktatus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git checkout
+M	.Rproj.user/FFA5ED4A/console06/9B0174BB
+Your branch is up to date with 'origin/master'.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ ;[Kpull[K[K[K[Kgit status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mdeleted:    database.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mdatabase的副本.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[KJunfengdeMacBook-Pro:test_github junfengwang$ stu[K[K[Kgit statue
+git: 'statue' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ s[Kgit stua[Ktue[K[K[K[Katue[K[Kus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/FFA5ED4A/pcs/[m
+	[31m.Rproj.user/FFA5ED4A/rmd-outputs[m
+	[31m.Rproj.user/FFA5ED4A/saved_source_markers[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/DF0043C5[m
+	[31m.Rproj.user/FFA5ED4A/sources/s-AAC91BD3/[m
+	[31mdatabase的副本.R[m
+	[31mtest_dplyr.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/FFA5ED4A/pcs/[m
+	[31m.Rproj.user/FFA5ED4A/rmd-outputs[m
+	[31m.Rproj.user/FFA5ED4A/saved_source_markers[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/DF0043C5[m
+	[31m.Rproj.user/FFA5ED4A/sources/s-AAC91BD3/[m
+	[31mdatabase的副本.R[m
+	[31mtest_dplyr.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/FFA5ED4A/pcs/[m
+	[31m.Rproj.user/FFA5ED4A/rmd-outputs[m
+	[31m.Rproj.user/FFA5ED4A/saved_source_markers[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/DF0043C5[m
+	[31m.Rproj.user/FFA5ED4A/sources/s-AAC91BD3/[m
+	[31mdatabase的副本.R[m
+	[31mtest_dplyr.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ girt [K[K[Kt ade [K[K[K[Kadd test.[K_
+test_dplyr.R       test_github.Rproj  
+JunfengdeMacBook-Pro:test_github junfengwang$ git add test_dplyr.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master dd148ca] test dplyr
+ 1 file changed, 76 insertions(+)
+ create mode 100644 test_dplyr.R
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)   Counting objects:  50% (2/4)   Counting objects:  75% (3/4)   Counting objects: 100% (4/4)   Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 1.06 KiB | 542.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   72c85e5..dd148ca  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+	[31mmodified:   test_dplyr.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/FFA5ED4A/pcs/[m
+	[31m.Rproj.user/FFA5ED4A/rmd-outputs[m
+	[31m.Rproj.user/FFA5ED4A/saved_source_markers[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/DF0043C5[m
+	[31m.Rproj.user/FFA5ED4A/sources/s-AAC91BD3/[m
+	[31mdatabase的副本.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git status[2Ppushcommitadd test_dplyr.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add test_dplyr.R [11Pstatus[2Ppushcommit
+hint: Waiting for your editor to close the file... [?2004h[K[master f0286e3] delete student  Please enter the commit message for your changes. Lines starting
+ 1 file changed, 1 deletion(-)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ TIG [K[K[K[Kgit push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   dd148ca..f0286e3  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ [KJunfengdeMacBook-Pro:test_github junfengwang$ [KJunfengdeMacBook-Pro:test_github junfengwang$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+	[31mmodified:   test_dplyr.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.Rhistory[m
+	[31m.Rproj.user/FFA5ED4A/pcs/[m
+	[31m.Rproj.user/FFA5ED4A/rmd-outputs[m
+	[31m.Rproj.user/FFA5ED4A/saved_source_markers[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/DF0043C5[m
+	[31m.Rproj.user/FFA5ED4A/sources/s-AAC91BD3/[m
+	[31mdatabase的副本.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ gitgit[K[K[K add test_
+test_dplyr.R       test_github.Rproj  
+JunfengdeMacBook-Pro:test_github junfengwang$ git add test_
+test_dplyr.R       test_github.Rproj  
+JunfengdeMacBook-Pro:test_github junfengwang$ git add test_
+test_dplyr.R       test_github.Rproj  
+JunfengdeMacBook-Pro:test_github junfengwang$ git add test_github.Rproj [K[K[K[K[K[K[K[K[K[K[K[K[Kdplyr.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add[K[K[Kcommit
+hint: Waiting for your editor to close the file... [?2004h[K[master 75dec9f] 5.3
+ 1 file changed, 48 insertions(+), 1 deletion(-)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 828 bytes | 828.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   f0286e3..75dec9f  master -> master
+f[Kgit add k)[K_means.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit[K[K[K[K[K[K[K commit
+hint: Waiting for your editor to close the file... [?2004h[K[master c540397] 判断空值
+ 1 file changed, 18 insertions(+)
+ create mode 100644 k_means.R
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ ti[K[Kgit push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)   Counting objects:  50% (2/4)   Counting objects:  75% (3/4)   Counting objects: 100% (4/4)   Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 513 bytes | 513.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   75dec9f..c540397  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ Git[K[K[Kgit add trial_class.[K_leads.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master fde34cb] 长表变宽表
+ 1 file changed, 38 insertions(+)
+ create mode 100644 trial_class_leads.R
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git phsu[K[K[Kush
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)   Counting objects:  50% (2/4)   Counting objects:  75% (3/4)   Counting objects: 100% (4/4)   Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 571 bytes | 571.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   c540397..fde34cb  master -> master
+Git==[K[K[K[K[Kgit stu[K[Kuatue[K[K[K[K[Ktatue
+git: 'statue' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ git statue[Ks
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+	[31mmodified:   test_dplyr.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.RData[m
+	[31m.Rhistory[m
+	[31m.Rproj.user/FFA5ED4A/build_options[m
+	[31m.Rproj.user/FFA5ED4A/pcs/[m
+	[31m.Rproj.user/FFA5ED4A/rmd-outputs[m
+	[31m.Rproj.user/FFA5ED4A/saved_source_markers[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/83FE7019[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/B5C44AA2[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/DF0043C5[m
+	[31m.Rproj.user/FFA5ED4A/sources/prop/FA1ECD50[m
+	[31m.Rproj.user/FFA5ED4A/sources/s-6C113A0A/[m
+	[31m1.png[m
+	[31m2.png[m
+	[31mdatabase的副本.R[m
+	[31mmain.R[m
+	[31mstudent_personas_lession.rds[m
+	[31mtest.R[m
+	[31mtrial_class.csv[m
+	[31mtrial_class.xls[m
+	[31m版本分布.xlsx[m
+	[31m解释.xlsx[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ gg[KIT[K[Kid [K[Kt add test_dplyr.R 
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master e793108] 5.5
+ 1 file changed, 73 insertions(+)
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 1.04 KiB | 1.04 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   fde34cb..e793108  master -> master
+[Kbogon:test_github junfengwang$ git add test_dplyr.R 
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ gei[K[K[Kgit commit
+hint: Waiting for your editor to close the file... [?2004h[K[master 1bccfb7] Dplyr common examples
+ 1 file changed, 93 insertions(+), 1 deletion(-)
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ git phsh
+git: 'phsh' is not a git command. See 'git --help'.
+
+The most similar command is
+	push
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ tig [K[K[K[Kgit push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 1.64 KiB | 1.64 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   e793108..1bccfb7  master -> master
+tlmgr update --self
+tlmgr: package repository http://mirrors.geekpie.club/CTAN/systems/texlive/tlnet (not verified: gpg unavailable)
+You don't have permission to change the installation in any way,
+specifically, the directory /usr/local/texlive/2018/tlpkg/ is not writable.
+Please run this program as administrator, or contact your local admin.
+tlmgr: An error has occurred. See above messages. Exiting.
+]0;~/Documents/DATA/R/test_githubbogon:test_github junfengwang$ tlmgr install collection-fontsrecommended
+You don't have permission to change the installation in any way,
+specifically, the directory /usr/local/texlive/2018/tlpkg/ is not writable.
+Please run this program as administrator, or contact your local admin.
+tlmgr: An error has occurred. See above messages. Exiting.
+sudo tlmgr update --self
+Password:
+tlmgr: package repository http://mirrors.geekpie.club/CTAN/systems/texlive/tlnet (not verified: gpg unavailable)
+tlmgr: saving backups to /usr/local/texlive/2018/tlpkg/backups
+tlmgr: no self-updates for tlmgr available.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ sudo tlmgr install collection-fontsrecommended
+tlmgr: package repository http://mirrors.sjtug.sjtu.edu.cn/ctan/systems/texlive/tlnet (not verified: gpg unavailable)
+tlmgr install: package already present: collection-fontsrecommended
+sudo tlmgr install collection-fontsrecommended[22Pupdate --self
+Password:
+Sorry, try again.
+Password:
+Sorry, try again.
+Password:
+tlmgr: package repository http://mirror.lzu.edu.cn/CTAN/systems/texlive/tlnet (not verified: gpg unavailable)
+tlmgr: saving backups to /usr/local/texlive/2018/tlpkg/backups
+tlmgr: no self-updates for tlmgr available.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ sudo tlmgr update --selfinstall collection-fontsrecommended
+tlmgr: package repository http://mirrors.geekpie.club/CTAN/systems/texlive/tlnet (not verified: gpg unavailable)
+tlmgr install: package already present: collection-fontsrecommended
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add mak[Krkdown_test.Rmd 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master 86ec206] markdown
+ 1 file changed, 42 insertions(+)
+ create mode 100644 markdown_test.Rmd
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)   Counting objects:  50% (2/4)   Counting objects:  75% (3/4)   Counting objects: 100% (4/4)   Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 774 bytes | 774.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   1bccfb7..86ec206  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pushcommitadd markdown_test.Rmd 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add markdown_test.Rmd push[Kcommit
+hint: Waiting for your editor to close the file... [?2004herror: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commitadd markdown_test.Rmd push[K
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pushcommitadd markdown_test.Rmd 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add markdown_test.Rmd push[Kcommit
+hint: Waiting for your editor to close the file... [?2004h[K[master db3c59f] header.tex
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 308 bytes | 308.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   86ec206..db3c59f  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add header.tex 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ gir [K[Kt commit
+hint: Waiting for your editor to close the file... [?2004h[K[master 582b6be] header.tex for markdown pdf
+ 1 file changed, 4 insertions(+)
+ create mode 100644 header.tex
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ tig[K[K[Kgit push
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)   Counting objects:  50% (2/4)   Counting objects:  75% (3/4)   Counting objects: 100% (4/4)   Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   db3c59f..582b6be  master -> master
+git add tra[Ku[Kial_class_leads.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master 0d171b9] innerjoin
+ 1 file changed, 32 insertions(+)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ gitgit [K[K[K[K push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 513 bytes | 513.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   582b6be..0d171b9  master -> master
+git push
+Everything up-to-date
+git add k_means.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git m[Kcommit
+hint: Waiting for your editor to close the file... [?2004h[K[master 965fd89] 红酒供应商聚类
+ 1 file changed, 86 insertions(+), 18 deletions(-)
+ rewrite k_means.R (91%)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 1.30 KiB | 1.30 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   0d171b9..965fd89  master -> master
+GIR [K[K[K[Kgit add trai[K[Kial_class_leads.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ tit [K[K[K[Kgit commit
+hint: Waiting for your editor to close the file... [?2004h[K[master 092b66b] leads 0130
+ 1 file changed, 6 insertions(+), 16 deletions(-)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ gir p[K[K[Kt push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   965fd89..092b66b  master -> master
+Git[K[K[Kgit add leads_0131.xlsx 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commity[K
+hint: Waiting for your editor to close the file... [?2004h[K[master 9a6f2ba] AB test
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 leads_0131.xlsx
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git s[Kpush
+Enumerating objects: 4, done.
+Counting objects:  25% (1/4)   Counting objects:  50% (2/4)   Counting objects:  75% (3/4)   Counting objects: 100% (4/4)   Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 13.13 KiB | 6.57 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/15210280436/test_github.git
+   092b66b..9a6f2ba  master -> master
+git add k_ma[Keans.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ GIR C[K[K[K[K[Kgit commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+	[31mmodified:   test_dplyr.R[m
+
+Untracked files:
+	[31m.gitignore[m
+	[31m1[m
+	[31m1.png[m
+	[31m2.png[m
+	[31mdatabase的副本.R[m
+	[31mdiamonds.pdf[m
+	[31mgitR.txt[m
+	[31mleads.xlsx[m
+	[31mleads0131.R[m
+	[31mleads_0130.xlsx[m
+	[31mmain.R[m
+	[31mmarkdown_test.log[m
+	[31mmarkdown_test.pdf[m
+	[31mmarkdown_test.tex[m
+	[31mmissfont.log[m
+	[31mstudent_personas_lession.rds[m
+	[31mtest.R[m
+	[31mtest.Rmd[m
+	[31mtest.html[m
+	[31mtest.log[m
+	[31mtest.tex[m
+	[31mtrial_class.csv[m
+	[31mtrial_class.xls[m
+	[31mzhengjia.xlsx[m
+	[31m~$leads_0131.xlsx[m
+	[31m版本分布.xlsx[m
+	[31m解释.xlsx[m
+
+no changes added to commit
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+	[31mmodified:   test_dplyr.R[m
+
+Untracked files:
+	[31m.gitignore[m
+	[31m1[m
+	[31m1.png[m
+	[31m2.png[m
+	[31mdatabase的副本.R[m
+	[31mdiamonds.pdf[m
+	[31mgitR.txt[m
+	[31mleads.xlsx[m
+	[31mleads0131.R[m
+	[31mleads_0130.xlsx[m
+	[31mmain.R[m
+	[31mmarkdown_test.log[m
+	[31mmarkdown_test.pdf[m
+	[31mmarkdown_test.tex[m
+	[31mmissfont.log[m
+	[31mstudent_personas_lession.rds[m
+	[31mtest.R[m
+	[31mtest.Rmd[m
+	[31mtest.html[m
+	[31mtest.log[m
+	[31mtest.tex[m
+	[31mtrial_class.csv[m
+	[31mtrial_class.xls[m
+	[31mzhengjia.xlsx[m
+	[31m~$leads_0131.xlsx[m
+	[31m版本分布.xlsx[m
+	[31m解释.xlsx[m
+
+no changes added to commit
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/9B0174BB.env[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/FFA5ED4A/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/B68E3A85-contents[m
+	[31mdeleted:    .Rproj.user/FFA5ED4A/sources/s-B38B0743/lock_file[m
+	[31mmodified:   .Rproj.user/shared/notebooks/paths[m
+	[31mdeleted:    database.R[m
+	[31mmodified:   test_dplyr.R[m
+
+Untracked files:
+	[31m.gitignore[m
+	[31m1[m
+	[31m1.png[m
+	[31m2.png[m
+	[31mdatabase的副本.R[m
+	[31mdiamonds.pdf[m
+	[31mgitR.txt[m
+	[31mleads.xlsx[m
+	[31mleads0131.R[m
+	[31mleads_0130.xlsx[m
+	[31mmain.R[m
+	[31mmarkdown_test.log[m
+	[31mmarkdown_test.pdf[m
+	[31mmarkdown_test.tex[m
+	[31mmissfont.log[m
+	[31mstudent_personas_lession.rds[m
+	[31mtest.R[m
+	[31mtest.Rmd[m
+	[31mtest.html[m
+	[31mtest.log[m
+	[31mtest.tex[m
+	[31mtrial_class.csv[m
+	[31mtrial_class.xls[m
+	[31mzhengjia.xlsx[m
+	[31m~$leads_0131.xlsx[m
+	[31m版本分布.xlsx[m
+	[31m解释.xlsx[m
+
+no changes added to commit
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git add k_means.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Everything up-to-date
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git pushadd k_means.R 
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git commit
+hint: Waiting for your editor to close the file... [?2004h[K[master 7e3cac4] kmeans
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ git push
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)   Writing objects:  66% (2/3)   Writing objects: 100% (3/3)   Writing objects: 100% (3/3), 279 bytes | 279.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/15210280436/test_github.git
+   9a6f2ba..7e3cac4  master -> master
+]0;~/Documents/DATA/R/test_githubJunfengdeMacBook-Pro:test_github junfengwang$ 

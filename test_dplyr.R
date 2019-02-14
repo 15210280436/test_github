@@ -287,4 +287,9 @@ df %>%
   mutate(cumsum_spending = cumsum(spending)) 
 
 k <- 2:10
-km <- map(k)
+k %>% map_dbl(sqrt)
+# map()       # 返回一个列表（list）
+# map_lgl()    # 返回一个逻辑型向量
+# map_int()    # 返回一个整数型向量
+# map_dbl()   # 返回双精度数值向量
+# map_chr()   # 返回字符串向量

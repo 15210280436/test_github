@@ -1,0 +1,4 @@
+R github
+1、git remote add origin git 地址
+2、git branch --set-upstream-to=origin/master master
+3、git push -f

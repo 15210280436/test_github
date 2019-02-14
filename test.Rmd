@@ -1,0 +1,46 @@
+---
+title: "RMarkdown"
+output:
+  pdf_document:
+    includes:
+      in_header: header.tex
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(fig.showtext = TRUE)
+library(showtext)
+library(tidyverse)
+library(nycflights13)
+library(ggplot2)
+library(DBI)
+library(modelr)
+library(charlatan)
+library(stringr) 
+```
+
+
+Markdown **easy to use** format for writing reports. It resembles what you naturally write every time you compose an email. In fact, you may have already used markdown *without realizing it*. These websites all rely on markdown formatting
+
+* [Github](www.github.com)
+* [StackOverflow](www.stackoverflow.com)
+* [Reddit](www.reddit.com)
+
+## Including Freqpoly
+```{r echo=FALSE}
+diamonds %>% 
+  filter(carat<3) %>% 
+  ggplot(mapping = aes(x=carat,color=cut))+
+  geom_freqpoly(binwidth=0.6)
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
